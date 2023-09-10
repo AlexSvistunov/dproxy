@@ -1,0 +1,110 @@
+.hero {
+  min-height: 600px;
+  background-color: var(--background);
+}
+
+.hero__content {
+  padding-top: 85px;
+  padding-bottom: 80px;
+}
+.hero__content {
+  display: flex;
+
+}
+
+.hero__info {
+  padding-top: 85px;
+  max-width: 507px;
+  color: var(--white);
+  margin-right: 75px;
+}
+
+.hero__title {
+  margin: 0;
+  padding: 0;
+  font-size: 32px;
+  line-height: 140%;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 10px;
+
+}
+
+.hero__descr {
+  padding: 0;
+  margin: 0;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 140%;
+  margin-bottom: 30px;
+}
+
+.block-btn {
+  display: flex;
+  gap: 20px;
+}
+
+.btn-buyproxy {
+  padding: 15px 30px;
+  font-size: 16px;
+  line-height: 140%;
+  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.25);
+  color: var(--white);
+  text-align: center;
+  border-radius: 16px;
+  background: linear-gradient(47deg, #0A6FCC -44.41%, rgba(59, 237, 77, 0.75) 124.33%);
+  box-shadow: 0px 2.5px 9.375px 0px #004770;
+  transition: all .35s;
+}
+
+.btn-buyproxy:hover {
+  border-radius: 16px;
+  background: linear-gradient(47deg, rgba(59, 237, 77, 0.75) -44.41%, #0A6FCC 124.33%);
+  box-shadow: 0px 2.5px 9.375px 0px #004770;
+  transition: all .35s;
+}
+
+.link-writetocreator {
+  border-radius: 15px;
+  font-size: 16px;
+  padding: 15px 20px;
+  border: 1px solid transparent;
+  border-image: linear-gradient(47deg, #0A6FCC -44.41%, rgba(59, 237, 77, 0.75) 124.33%);
+  -moz-border-image: -moz-linear-gradient(47deg, #0A6FCC -44.41%, rgba(59, 237, 77, 0.75) 124.33%);
+  -webkit-border-image: -webkit-linear-gradient(47deg, #0A6FCC -44.41%, rgba(59, 237, 77, 0.75) 124.33%);
+  border-image-slice: 1;
+  transition: all .35s;
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.link-title {
+  background: linear-gradient(47deg, #0A6FCC -44.41%, rgba(59, 237, 77, 0.75) 124.33%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+.link-writetocreator__icon {
+  display: inline-block;
+  transform: translateY(3px);
+}
+
+.link-writetocreator:hover {
+  border: 1px solid var(--brand-color, #0A6FCC);
+  background: linear-gradient(47deg, #0A6FCC -44.41%, rgba(59, 237, 77, 0.75) 124.33%);
+  box-shadow: 0px 2.5px 9.375px 0px #004770;
+  transition: all .35s;
+}
+
+.link-writetocreator:hover .link-title {
+
+}
+
+.link-writetocreator:hover span path {
+  fill: var(--white);
+  transition: .35s;
+}

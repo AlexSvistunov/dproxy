@@ -1,0 +1,159 @@
+.header {
+  padding: 20px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: inline-block;
+  width: 92px;
+  height: 30px;
+  background-image: url('../images/logo.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.nav__list {
+  padding: 0;
+  margin: 0;
+}
+
+.header__nav-list {
+  display: flex;
+  gap: 20px;
+}
+
+
+.header__nav-link {
+  color: var(--white);
+  font-weight: 500;
+  transition: .35s;
+
+}
+
+.header__nav-link:hover {
+  background: var(--brand-color, linear-gradient(47deg, #0A6FCC -44.41%, rgba(59, 237, 77, 0.75) 124.33%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: .35s;
+}
+
+
+.header__right {
+  display: flex;
+}
+
+.socials {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+}
+
+
+
+.socials__link {
+  display: inline-block;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+}
+
+.socials__link--tg {
+  background-image: url('../images/telegram.svg');
+}
+
+.socials__link--mail {
+  background-image: url('../images/mail.svg');
+}
+
+
+
+
+.toggle {
+  width: 65px;
+  height: 30px;
+  /* position: absolute; */
+  margin-right: 40px;
+  position: relative;
+}
+
+.toggle::before {
+  content: "ru";
+  font-size: 10px;
+  color: var(--white);
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 5;
+  pointer-events: none;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-family: var(--font-family);
+  color: var(--white);
+}
+
+.toggle::after {
+  content: "en";
+  font-size: 10px;
+  color: var(--white);
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 5;
+  pointer-events: none;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-family: var(--font-family);
+  color: var(--white);
+}
+
+
+
+.toggle-input {
+  width: 75px;
+  position: relative;
+  cursor: pointer;
+}
+
+.toggle-input::before {
+  position: absolute;
+  content: "";
+  width: 65px;
+  height: 30px;
+  background-color: #011624;
+  position: absolute;
+  border-radius: 20px;
+  border: 1px solid var(--green-gradient);
+}
+
+.toggle-input::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  top: -1px;
+  background: linear-gradient(47deg, #0A6FCC -44.41%, #3BED4D 124.33%);
+  transition: left 0.35s;
+
+}
+
+.toggle-input:checked::after {
+  left: 33px;
+  transition: left 0.35s;
+}

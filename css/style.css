@@ -1,0 +1,18 @@
+@import '../css/normalize.css';
+@import '../css/fonts.css';
+@import '../css/variables.css';
+@import '../css/overall.css';
+
+/* --------------------- */
+
+
+
+/* COMPONENTS */
+@import '../components/header.css';
+@import '../components/hero.css';
+@import '../components/work.css';
+@import '../components/advantages.css';
+@import '../components/footer.css';
+
+
+/* ------------------------ */

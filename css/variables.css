@@ -1,0 +1,15 @@
+:root {
+    --font-family: 'Montserrat';
+
+    --offset: 80px;
+    --title-offset: 60px;
+
+    
+    --green-dark: #003129;
+    --green-gradient: linear-gradient(47deg, #0A6FCC -44.41%, rgba(59, 237, 77, 0.75) 124.33%);
+    --background: #1F1D2B;
+    --white: #fff;
+    --black: #011624;
+
+}
+
