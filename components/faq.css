@@ -33,6 +33,7 @@
 
 
 .accordion__switch {
+  width: 100%;
   padding: 0 20px;
   transition: .35s;
   display: flex;
