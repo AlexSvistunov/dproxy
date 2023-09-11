@@ -1,5 +1,16 @@
 .advantages {
   padding: var(--offset) 0;
+  position: relative;
+}
+
+.advantages::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -2;
   background-color: var(--background);
 }
 
@@ -27,6 +38,7 @@
   grid-template-columns: repeat(8,1fr);
   row-gap: 40px;
   column-gap: 20px;
+  margin-bottom: 60px;
 }
 
 .advantages__item {
@@ -99,5 +111,15 @@
 .advantages__item-descr {
   max-width: 92%;
   margin: 0 auto;
+}
+
+.advantages__link {
+  margin: 0 auto;
+  padding: 20px 30px;
+  min-height: 62px;
+  width: 100%;
+  max-width: 276px;
+  text-align: center;
+  justify-content: space-between;
 }
 

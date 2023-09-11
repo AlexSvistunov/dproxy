@@ -1,9 +1,21 @@
 .hero {
   min-height: 600px;
+  position: relative;
+
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -2;
   background-color: var(--background);
 }
 
-.hero__content {
+.hero__content {  
   padding-top: 85px;
   padding-bottom: 80px;
 }
@@ -65,26 +77,41 @@
 }
 
 .link-writetocreator {
-  border-radius: 15px;
+  position: relative;
   font-size: 16px;
   padding: 15px 20px;
-  border: 1px solid transparent;
-  border-image: linear-gradient(47deg, #0A6FCC -44.41%, rgba(59, 237, 77, 0.75) 124.33%);
-  -moz-border-image: -moz-linear-gradient(47deg, #0A6FCC -44.41%, rgba(59, 237, 77, 0.75) 124.33%);
-  -webkit-border-image: -webkit-linear-gradient(47deg, #0A6FCC -44.41%, rgba(59, 237, 77, 0.75) 124.33%);
-  border-image-slice: 1;
   transition: all .35s;
   min-height: 52px;
   display: flex;
   align-items: center;
   gap: 10px;
+  border-radius: 15px;
+  background-color: var(--background);
+  
+  
+
 }
+
+.link-writetocreator::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(47deg, #0A6FCC -44.41%, rgba(59, 237, 77, 0.75) 124.33%);
+  border-radius: 15px;
+  z-index: -1;
+}
+
+
 
 .link-title {
   background: linear-gradient(47deg, #0A6FCC -44.41%, rgba(59, 237, 77, 0.75) 124.33%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-weight: 500;
 
 }
 
@@ -94,17 +121,24 @@
 }
 
 .link-writetocreator:hover {
-  border: 1px solid var(--brand-color, #0A6FCC);
+  /* border: 1px solid var(--brand-color, #0A6FCC); */
   background: linear-gradient(47deg, #0A6FCC -44.41%, rgba(59, 237, 77, 0.75) 124.33%);
   box-shadow: 0px 2.5px 9.375px 0px #004770;
   transition: all .35s;
 }
 
 .link-writetocreator:hover .link-title {
-
+  background: var(--white);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .link-writetocreator:hover span path {
   fill: var(--white);
   transition: .35s;
 }
+
+
+
+

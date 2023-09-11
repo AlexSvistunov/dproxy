@@ -25,6 +25,7 @@
 }
 
 .footer-socials__head {
+  font-style: normal;
   margin-bottom: 15px;
 }
 
@@ -77,12 +78,11 @@
 
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.10);
-
-}
-
-.footer-bottom {
+  font-size: 14px;
   display: flex;
   justify-content: space-between;
   font-weight: 300;
   padding: 22px 0;
+
 }
+

@@ -24,7 +24,6 @@
   color: var(--black);
   background-color: var(--white);
   border-radius: 8px;
-  /* padding: 20px; */
 }
 
 .accordion:not(:last-child) {
@@ -66,6 +65,7 @@
   margin: 0;
   padding: 18px 140px 20px 0;
   border-top: 1px solid rgba(0,0,0,0.3);
+  font-weight: 300;
   
 
   
@@ -86,3 +86,30 @@
   transform: rotate(-180deg);
   transition: transform .35s;
 }
+
+
+.btn {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px 20px;
+  min-height: 60px;
+  background-color: #1F1D2B;
+  border-radius: 15px;
+  width: 200px;
+  height: 60px;
+
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(47deg, #0A6FCC -44.41%, rgba(59, 237, 77, 0.75) 124.33%);
+  z-index: -1;
+  border-radius: 15px;
+}
+

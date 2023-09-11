@@ -1,5 +1,16 @@
 .work {
   padding: var(--offset) 0;
+  position: relative;
+}
+
+.work::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -2;
   background-color: var(--background);
 }
 
@@ -65,4 +76,19 @@
 
 .work__row-item:not(:last-child) {
   margin-bottom: 10px;
+}
+
+.link-box {
+  text-align: center;
+}
+
+.work__link {
+  display: inline-block;
+  width: 100%;
+  max-width: 276px;
+  text-align: center;
+  padding: 20px 30px;
+  min-height: 62px;
+
+
 }
