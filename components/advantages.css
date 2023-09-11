@@ -24,7 +24,7 @@
   margin-bottom: var(--title-offset);
 }
 
-.advantages__title span {
+.section-title .title--decoration {
   display: inline-block;
   background: linear-gradient(47deg, #0A6FCC 8.51%, rgba(59, 237, 77, 0.75) 90.91%);
   background-clip: text;

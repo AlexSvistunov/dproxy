@@ -8,11 +8,11 @@
   margin-bottom: var(--title-offset);
 }
 
-.faq__title span {
+/* .faq__title span {
   display: block;
   font-size: 16px;
   font-weight: 400;
-}
+} */
 
 .faq__container {
   max-width: 630px;

@@ -66,14 +66,13 @@
   border-radius: 16px;
   background: linear-gradient(47deg, #0A6FCC -44.41%, rgba(59, 237, 77, 0.75) 124.33%);
   box-shadow: 0px 2.5px 9.375px 0px #004770;
-  transition: all .35s;
+  transition: background 1s ease;
 }
 
 .btn-buyproxy:hover {
-  border-radius: 16px;
   background: linear-gradient(47deg, rgba(59, 237, 77, 0.75) -44.41%, #0A6FCC 124.33%);
   box-shadow: 0px 2.5px 9.375px 0px #004770;
-  transition: all .35s;
+  transition: background 1s ease;
 }
 
 .link-writetocreator {
