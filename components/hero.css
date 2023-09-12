@@ -176,5 +176,16 @@
 
 }
 
+.hero.proxy .hero__info {
+  order: 2;
+  margin-right: 0;
+  max-width: 534px;
+}
+
+.hero.proxy .hero__img-box {
+  order: 1;
+  margin-right: 75px;
+}
+
 
 
