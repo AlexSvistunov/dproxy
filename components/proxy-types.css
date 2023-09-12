@@ -1,0 +1,191 @@
+.proxy-types {
+  padding: var(--offset) 0;
+  background-color: var(--white-section);
+}
+
+.proxy-types__title {
+  margin-bottom: var(--title-offset);
+}
+
+.proxy-types__items {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+  gap: 20px;
+  margin-bottom: var(--title-offset);
+}
+
+.types-list__item {
+  grid-column: 3 span;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background-color: var(--white);
+  min-height: 669px;
+}
+
+.types-item__main {
+  grid-column: 4 span;
+  position: relative;
+}
+
+.types-item__main::before {
+  position: absolute;
+  content: "Популярный выбор";
+  left: 50%;
+  transform: translateX(-50%);
+  top: -15px;
+  border-radius: 14px;
+  background-color: #B0F8C7;
+  font-size: 10px;
+  font-weight: 300;
+  color:var(--black);
+  padding: 6px 10px;
+  max-width: 128px;
+  width: 100%;
+  min-height: 12px;
+}
+
+.types__item-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.types-item__head {
+  text-align: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #003129;
+  padding-bottom: 18px;
+  position: relative;
+  max-width: 208px;
+
+}
+
+.types-item__head::after {
+  position: absolute;
+  content: "";
+  background-color: var(--black);
+  opacity: 0.1;
+  width: 208px;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+
+
+.types-item__list {
+  padding: 0;
+  margin: 0;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  position: relative;
+}
+
+.types-item__list::after {
+  position: absolute;
+  content: "";
+  background-color: var(--black);
+  opacity: 0.1;
+  width: 208px;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.types-item__el {
+  padding-left: 26px;
+  position: relative;
+
+}
+
+.types-item__el:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+
+
+.types-item__el::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 15px;
+  background-image: url('../images/arrow-gradient.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.types-item__payment {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  text-align: center;
+}
+
+.types-item__pay {
+  color: #000;
+  display: block;
+  font-weight: 600;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+
+
+.types-item__box {
+  padding-top: 18px;
+  margin-top: auto;
+}
+
+.types-item__button {
+  min-height: 50px;
+  padding: 15px 30px;
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--white);
+  text-align: center;
+  border-radius: 16px;
+  background: linear-gradient(47deg, #0A6FCC -44.41%, rgba(59, 237, 77, 0.75) 124.33%);
+  transition: background 1s ease;
+}
+
+.types-item__button:hover {
+  background: linear-gradient(47deg, rgba(59, 237, 77, 0.75) -44.41%, #0A6FCC 124.33%);
+  transition: background 1s ease;
+}
+
+.proxy-types__subtitle  {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 22px;
+  line-height: 140%;
+  color: #003129;
+  margin: 0 auto;
+  max-width: 598px;
+}
+
+.proxy-types__subtitle--1 {
+  margin-bottom: 20px;
+}
+
+
+
+
+
