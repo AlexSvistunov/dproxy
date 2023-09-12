@@ -47,12 +47,13 @@
 
             <ul class="socials header__socials list-reset">
               <li class="socials__item header__socials-item">
-                <a class="socials__link socials__link--tg header__socials-link" href="#" aria-label="telegram icon"></a>
+                <a class="socials__link socials__link--tg header__socials-link" href="#" aria-label="telegram icon"
+                  target="_blank"></a>
               </li>
 
               <li class="socials__item header__socials-item">
-                <a class="socials__link socials__link--mail header__socials-link" href="#"
-                  aria-label="mailbox icon"></a>
+                <a class="socials__link socials__link--mail header__socials-link" href="#" aria-label="mailbox icon"
+                  target="_blank"></a>
               </li>
             </ul>
           </div>
@@ -76,6 +77,7 @@
               <div class="hero__buttons block-btn">
                 <button class="hero__btn btn-reset btn-buyproxy">Купить прокси</button>
                 <a class="hero__link link-writetocreator" target="_blank" href="#">
+                  <!-- Написать разработчику -->
                   <span class="link-title">Написать разработчику</span>
                   <span class="link-writetocreator__icon">
                     <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -95,10 +97,37 @@
                 </a>
               </div>
             </div>
-            <img class="hero__img" src="images/man.png" alt="man">
-
-          </div>
-        </div>
+            <div class="hero__img-box">
+              <div class="hero__decor-item hero__decor-item--blue decor-item decor-item--blue">
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="523" height="497" viewBox="0 0 523 497" fill="none">
+                  <g filter="url(#filter0_f_202_4712)">
+                    <circle cx="261.5" cy="235.5" r="61.5" fill="#0C72C7"/>
+                  </g>
+                  <defs>
+                    <filter id="filter0_f_202_4712" x="0" y="-26" width="523" height="523" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                      <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_202_4712"/>
+                    </filter>
+                  </defs>
+                </svg> -->
+              </div>
+              <img class="hero__img" src="images/man.png" alt="man">
+              <div class="hero__decor-item hero__decor-item--green decor-item decor-item--green">
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="523" height="449" viewBox="0 0 523 449" fill="none">
+                  <g filter="url(#filter0_f_202_4713)">
+                    <circle cx="261.5" cy="261.5" r="61.5" fill="#29A968"/>
+                  </g>
+                  <defs>
+                    <filter id="filter0_f_202_4713" x="0" y="0" width="523" height="523" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                      <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_202_4713"/>
+                    </filter>
+                  </defs>
+                </svg> -->
+              </div>
+            </div>
       </section>
 
 
@@ -113,11 +142,15 @@
                   общаться с менеджерами</p>
                 <p class="work__row-descr">Все данные о купленных прокси придут вам в Телеграм и на почту</p>
               </div>
-              <img class="work__row-image" src="images/work-1.jpg" alt="step 1 instruction img">
+              <div class="work__row-box">
+                <img class="work__row-image" src="images/work-1.jpg" alt="step 1 instruction img">
+              </div>
             </div>
 
             <div class="work__row">
-              <img class="work__row-image" src="images/work-2.jpg" alt="step 1 instruction img">
+              <div class="work__row-box">
+                <img class="work__row-image" src="images/work-2.jpg" alt="step 1 instruction img">
+              </div>
 
               <div class="work__row-text">
                 <div class="work__row-head">Шаг 2</div>
@@ -133,6 +166,12 @@
               </div>
             </div>
 
+            <div class="work__link-box link-box">
+              <a class="link-writetocreator work__link" href="#">
+                <span class="link-title">Перейти к тарифам</span>
+              </a>
+            </div>
+
           </div>
         </div>
 
@@ -140,7 +179,8 @@
 
       <section class="advantages">
         <div class="advantages__container">
-          <h2 class="advantages__title section-title section-title--light">Преимущества <span>D</span>PROXY</h2>
+          <h2 class="advantages__title section-title section-title--light">Преимущества <span
+              class="title--decoration">D</span>PROXY</h2>
 
           <ul class="advantages__items list-reset">
             <li class="advantages__item">
@@ -205,13 +245,35 @@
                 (не подмена)</div>
             </li>
           </ul>
+
+          <div class="advantages-box link-box">
+            <a class="link-writetocreator advantages__link" href="#">
+              <span class="link-title">Написать в Telegram</span>
+              <span class="link-writetocreator__icon">
+                <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M19.4944 0.896432C16.6843 1.98725 4.63506 6.66497 1.30587 7.93988C-0.926842 8.7565 0.380215 9.52217 0.380215 9.52217C0.380215 9.52217 2.2861 10.1346 3.91998 10.5939C5.55363 11.0533 6.42493 10.543 6.42493 10.543L14.1033 5.69424C16.8261 3.9589 16.1727 5.38793 15.5191 6.00055C14.1033 7.32769 11.7616 9.42006 9.80117 11.1045C8.92987 11.819 9.36541 12.4314 9.74681 12.7377C11.1626 13.8606 15.0292 16.1574 15.2468 16.3105C16.3972 17.0738 18.6601 18.1725 19.0042 15.8511L20.3657 7.83799C20.8014 5.13299 21.237 2.63198 21.2913 1.91747C21.4548 0.18192 19.4944 0.896432 19.4944 0.896432Z"
+                    fill="url(#paint0_linear_201_2056)" />
+                  <defs>
+                    <linearGradient id="paint0_linear_201_2056" x1="-9.47591" y1="24.5645" x2="19.0425" y2="-9.49302"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#0A6FCC" />
+                      <stop offset="1" stop-color="#3BED4D" stop-opacity="0.75" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+
+              </span>
+            </a>
+          </div>
         </div>
 
       </section>
 
       <section class="faq">
         <div class="faq__container">
-          <h2 class="faq__title section-title section-title--light">Часто задаваемые вопросы <span>FAQ по работе mobile
+          <h2 class="faq__title section-title section-title--light">Часто задаваемые вопросы <span
+              class="section-title--sub">FAQ по работе mobile
               proxy</span></h2>
 
           <div class="accordion">
@@ -297,7 +359,7 @@
               <h3 class="accordion__title">Для чего подойдут мобильные прокси?</h3>
 
               <span class="accordion__icon">
-            
+
 
               </span>
             </button>
@@ -315,6 +377,63 @@
           </div>
         </div>
       </section>
+
+      <section class="mobile">
+        <div class="mobile__container">
+          <h2 class="mobile__title section-title">
+            Покрытие <span class="title--decoration">D</span>PROXY
+            <span class="mobile__subtitle section-title--sub">Более <span class="title--decoration">10 000</span> IP
+              адресов по Тайланду</span>
+          </h2>
+
+          <img class="mobile__img" src="images/thai-flag.jpg" alt="thailand flag">
+
+          <h3 class="mobile__heading">Мобильные операторы
+            <span class="mobile__heading-subtitle">В данный момент команда ProxyAPP работает со следующими операторами
+              сотовой связи</span>
+          </h3>
+
+          <ul class="mobile__items list-reset">
+            <li class="mobile__item mobile__item--1">
+              <span>TrueMove</span>
+            </li>
+            <li class="mobile__item mobile__item--2">
+              <span>NTmobile</span>
+            </li>
+            <li class="mobile__item mobile__item--3">
+              <span>DTAC</span>
+            </li>
+          </ul>
+
+          <div class="block-btn mobile__buttons">
+            <button class="mobile__btn btn-reset btn-buyproxy">Купить прокси</button>
+            <a class="mobile__link link-writetocreator" target="_blank" href="#">
+              <!-- Написать разработчику -->
+              <span class="link-title">Написать разработчику</span>
+              <span class="link-writetocreator__icon">
+                <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M19.4944 0.896432C16.6843 1.98725 4.63506 6.66497 1.30587 7.93988C-0.926842 8.7565 0.380215 9.52217 0.380215 9.52217C0.380215 9.52217 2.2861 10.1346 3.91998 10.5939C5.55363 11.0533 6.42493 10.543 6.42493 10.543L14.1033 5.69424C16.8261 3.9589 16.1727 5.38793 15.5191 6.00055C14.1033 7.32769 11.7616 9.42006 9.80117 11.1045C8.92987 11.819 9.36541 12.4314 9.74681 12.7377C11.1626 13.8606 15.0292 16.1574 15.2468 16.3105C16.3972 17.0738 18.6601 18.1725 19.0042 15.8511L20.3657 7.83799C20.8014 5.13299 21.237 2.63198 21.2913 1.91747C21.4548 0.18192 19.4944 0.896432 19.4944 0.896432Z"
+                    fill="url(#paint0_linear_201_2056)" />
+                  <defs>
+                    <linearGradient id="paint0_linear_201_2056" x1="-9.47591" y1="24.5645" x2="19.0425" y2="-9.49302"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#0A6FCC" />
+                      <stop offset="1" stop-color="#3BED4D" stop-opacity="0.75" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+
+              </span>
+            </a>
+          </div>
+        </div>
+
+
+
+      </section>
+
+
     </main>
 
     <footer class="footer">
@@ -324,21 +443,23 @@
             <div class="footer-column footer-socials">
               <a class="logo footer__logo" href="#"></a>
 
-              <div class="footer-socials__head">
-                Как с нами связаться
-              </div>
+              <address>
+                <div class="footer-socials__head">
+                  Как с нами связаться
+                </div>
 
-              <ul class="socials footer__socials list-reset">
-                <li class="socials__item footer__socials-item">
-                  <a class="socials__link socials__link--tg footer__socials-link" href="#"
-                    aria-label="telegram icon"></a>
-                </li>
+                <ul class="socials footer__socials list-reset">
+                  <li class="socials__item footer__socials-item">
+                    <a class="socials__link socials__link--tg footer__socials-link" href="#"
+                      aria-label="telegram icon"></a>
+                  </li>
 
-                <li class="socials__item footer__socials-item">
-                  <a class="socials__link socials__link--mail footer__socials-link" href="#"
-                    aria-label="mailbox icon"></a>
-                </li>
-              </ul>
+                  <li class="socials__item footer__socials-item">
+                    <a class="socials__link socials__link--mail footer__socials-link" href="#"
+                      aria-label="mailbox icon"></a>
+                  </li>
+                </ul>
+              </address>
             </div>
             <div class="footer-column">
               <ul class="footer__list list-reset">
@@ -390,20 +511,19 @@
         </div>
 
         <div class="footer-bottom">
-          <div class="footer-bottom__copy">
+          <small class="footer-bottom__copy">
             © 2023 Dproxy
-          </div>
+          </small>
 
-          <div class="footer-bottom__text">
+          <small class="footer-bottom__text">
             Политика обработки персональных данных
-          </div>
+          </small>
         </div>
 
       </div>
     </footer>
   </div>
-
+  <script src="js/script.js"></script>
 </body>
-<script src="js/script.js"></script>
 
 </html>

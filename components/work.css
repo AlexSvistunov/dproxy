@@ -92,3 +92,32 @@
 
 
 }
+
+.work__row-box {
+  position: relative;
+}
+
+.work__row-box::before,
+.work__row-box::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;  
+}
+
+.work__row-box::before {  
+  top: -75px;
+  right: -75px;
+  background-image: url('../images/blue-decor.png');         
+}
+
+.work__row-box::after {
+  background-position: center;  
+  left: -75px;
+  bottom: -125px;
+  background-image: url('../images/green-decor.png');
+}

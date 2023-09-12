@@ -8,6 +8,33 @@
   max-width: 630px;
   margin: 0 auto;
   padding: 0 15px;
+  position: relative;
+}
+
+.footer__container::before,
+.footer__container::after {
+  position: absolute;
+  content: "";
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+  /* z-index: -1; */
+  width: 325px;
+  height: 325px;
+}
+
+.footer__container::before {
+  background-image: url('../images/footer-decor--blue.png');
+  top: -50px;
+  right: -75px;
+  background-position: center;
+}
+
+.footer__container::after {
+  background-image: url('../images/footer-decor--green.png');
+  left: -100px;
+  bottom: -50px;
+  background-position: center;
 }
 
 .footer-top {

@@ -138,6 +138,39 @@
   transition: .35s;
 }
 
+.decor-item {
+  position: absolute;
+}
+
+.hero__img-box {
+  position: relative;
+}
+
+.hero__decor-item {
+  position: absolute;
+  z-index: -1;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero__decor-item--blue {
+  position: absolute;
+  top: 0;
+  right: -50px;
+  background-image: url('../images/blue-decor.png');
+
+}
+
+.hero__decor-item--green {
+  position: absolute;
+  left: -50px;
+  bottom: -50px;
+  background-image: url('../images/green-decor.png');
+
+}
 
 
 

@@ -4,11 +4,11 @@ const toggleCheckbox = document.querySelector('.toggle-input');
 
 toggleCheckbox.addEventListener('change', function(){
   if(toggleCheckbox.checked) {
-    toggleElement.classList.add('toggle--active');
+    toggleElement.classList.add('toggle--active-eng');
   }
 
   else {
-    toggleElement.classList.remove('toggle--active');
+    toggleElement.classList.remove('toggle--active-eng');
   }
 });
 
@@ -27,8 +27,8 @@ accordions.forEach(el =>  {
     if(self.classList.contains('accordion--active')){
       accordionSwitch.setAttribute('aria-expanded', true);
       accordionContent.setAttribute('aria-hidden', false);
-      // accordionIcon.classList.toggle('rotate');
       accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+      accordionIcon.classList.add('rotate');
     
     }
 
@@ -36,6 +36,7 @@ accordions.forEach(el =>  {
       accordionSwitch.setAttribute('aria-expanded', false);
       accordionContent.setAttribute('aria-hidden', true);
       accordionContent.style.maxHeight = 0;
+      accordionIcon.classList.remove('rotate');
     }
 
   });
