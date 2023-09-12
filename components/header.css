@@ -59,7 +59,11 @@
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 15px;
+  /* gap: 15px; */
+}
+
+.socials__item:not(:last-child) {
+  margin-right: 15px;
 }
 
 
