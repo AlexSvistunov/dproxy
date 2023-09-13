@@ -1,3 +1,17 @@
+const swiper = new Swiper('.swiper', {
+  slidesPerView: '7',
+  loop: true,
+  spaceBetween: 20,
+
+
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
+
 
 const toggleElement = document.querySelector('.toggle');
 const toggleCheckbox = document.querySelector('.toggle-input');
@@ -42,3 +56,4 @@ accordions.forEach(el =>  {
   });
 
 });
+

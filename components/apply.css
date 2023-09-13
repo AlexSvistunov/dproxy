@@ -1,0 +1,18 @@
+.apply {
+  padding: var(--offset) 0;
+}
+
+.apply__title {
+  max-width: 533px;
+  margin: 0 auto;
+  margin-bottom: var(--title-offset);
+}
+
+
+
+.apply__item-descr {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+
