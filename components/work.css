@@ -97,6 +97,7 @@
   position: relative;
 }
 
+
 .work__row-box::before,
 .work__row-box::after {
   content: "";
@@ -120,4 +121,8 @@
   left: -75px;
   bottom: -125px;
   background-image: url('../images/green-decor.png');
+}
+
+.work__row-image {
+  border-radius: 8px;
 }
