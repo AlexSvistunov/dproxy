@@ -148,6 +148,7 @@
 
 .hero__img-box {
   position: relative;
+  flex-shrink: 0;
 }
 
 .hero__decor-item {

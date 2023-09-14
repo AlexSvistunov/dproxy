@@ -13,7 +13,7 @@
   display: flex;
   border-radius: 8px;
   transition: 0.35s ease-in-out;
-  /* justify-content: space-between; */
+  justify-content: space-between;
 }
 
 .areas__item:hover {
@@ -28,18 +28,21 @@
 }
 
 .areas__item-title {
+  padding: 0;
+  margin: 0;
   font-size: 16px;
-  width: 100%;
   padding-left: 39px;
   padding-right: 20px;
   color: var(--black);
   position: relative;
-  border-right: 1px solid rgba(0,0,0,0.1);
 }
 
 .areas__item-descr {
+  padding: 0;
+  margin: 0;
   padding-left: 20px;
   max-width: 427px;
+  border-left: 1px solid rgba(0,0,0,0.1);
 }
 
 .areas__item-title::before {
