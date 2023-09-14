@@ -59,4 +59,10 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.areas__item-title--decor {
+  background: var(--brand-color, linear-gradient(47deg, #0A6FCC -44.41%, rgba(59, 237, 77, 0.75) 124.33%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
