@@ -24,9 +24,33 @@
 /* ------------------------ */
 
 
-/* специальный софт выделить + добавить декор в блок faq */
+/* добавить декор в блок faq */
+
+@media(max-width:1050px) {
+  .work__row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work__row--2 .work__row-box {
+    order: 2;
+
+  }
+
+  .work__row--2 .work__row-btext {
+    order: 1;
+
+  }
+
+  .work__row-text {
+    margin-bottom: 40px;
+  }
+}
 
 @media(max-width:768.99px) {
+  :root {
+    --offset: 100px;
+  }
   .header {
     padding: 30px 0;
   }
@@ -61,9 +85,6 @@
     background: linear-gradient(100deg, #1F1D2B 0%, #1F1D2B 100%);
   }
 
-  .footer {
-    padding: 100px 0;
-  }
 
   .footer__container::before {
     display: none;
@@ -117,5 +138,57 @@
 
   .footer__link {
     font-size: 16px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+}
+
+@media(max-width: 680px) {
+  .work__row-box::before {
+    width: 250px;
+    height: 250px;
+    top: -60px;
+    right: 0;
+  }
+}
+
+
+
+@media(max-width: 600px) {
+  .accordion__text {
+    padding-right: 0;
+  }
+
+  .accordion__title {
+    text-align: left;
+    max-width: 90%;
+  }
+
+  .advantages__items {
+    grid-template-columns: repeat(4,1fr);
+  }
+
+  .advantages__item-descr {
+    font-weight: 400;
+  }
+
+  .work__row-head {
+    font-size: 24px;
+  }
+
+  .work__row-descr {
+    font-size: 16px;
+  }
+  
+  .work__row-item {
+    font-size: 16px;
+  }
+}
+
+@media(max-width: 360.99px) {
+  .advantages__item-descr {
+    font-size: 12px;
   }
 }
