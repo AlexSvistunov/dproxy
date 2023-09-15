@@ -62,7 +62,11 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+
+}
+
+.footer__item:not(:last-child){
+  margin-bottom: 15px;
 
 }
 
@@ -84,7 +88,7 @@
 
 .footer__payment-link {
   display: inline-block;
-  background-image: center;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -118,4 +122,12 @@
   padding: 22px 0;
 
 }
+
+/* ------------- */
+.footer-column--mobile {
+  display: none;
+}
+/* .footer__adress-mobile {
+  display: none;
+} */
 
