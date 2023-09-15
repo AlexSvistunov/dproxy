@@ -66,3 +66,17 @@ accordions.forEach(el =>  {
 
 });
 
+
+const burgerMenu = document.querySelector('.burger');
+const headerMenu = document.querySelector('.header__nav');
+const btntoBack = document.querySelector('.header__btn-back');
+burgerMenu.addEventListener('click',() => {
+  headerMenu.classList.toggle('header__nav--active');
+
+
+});
+
+btntoBack.addEventListener('click',() =>{
+  headerMenu.classList.remove('header__nav--active');
+});
+
