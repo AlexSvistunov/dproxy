@@ -26,6 +26,46 @@
 
 /* добавить декор в блок faq */
 
+@media(max-width:1500px) {
+  .advantages__container::before {
+    right: 0;
+    width: 250px;
+    height: 250px;
+  }
+
+  .advantages__container::after {
+    width: 250px;
+    height: 250px;
+    left: 0;
+  }
+}
+
+@media(max-width:1250px) {
+  .advantages__container::before {
+    transform: translateX(0);
+  }
+
+  .advantages__container::after {
+    transform: translateX(0);
+  }
+
+  .work__row-box::before {
+    right: 0;
+    width: 250px;
+    height: 250px;
+  }
+
+  .work__row-box::after {
+    left: 0;
+    width: 250px;
+    height: 250px;
+  }
+
+  .hero__decor-item--blue {
+    right: -15px;
+  }
+}
+
 @media(max-width:1050px) {
   .work__row {
     flex-direction: column;
@@ -44,6 +84,29 @@
 
   .work__row-text {
     margin-bottom: 40px;
+  }
+  
+  .hero__content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__info {
+    order: 2;
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  .hero__buttons {
+    justify-content: center;
+  }
+
+  .hero__img-box {
+    order: 1;
+  }
+
+  .hero.proxy .hero__img-box {
+    margin-right: 0;
   }
 }
 
@@ -152,6 +215,18 @@
     top: -60px;
     right: 0;
   }
+
+  .hero__title {
+    font-size: 24px;
+  }
+
+  .hero__descr {
+    font-size: 16px;
+  }
+
+  .hero__info {
+    padding-top: 50px;
+  }
 }
 
 
@@ -185,6 +260,32 @@
   .work__row-item {
     font-size: 16px;
   }
+
+  .block-btn {
+    flex-direction: column;
+    max-width: 273px;
+    margin: 0 auto;
+  }
+
+  .link-writetocreator {
+    gap: 0;
+  }
+
+  .btn-buyproxy {
+    margin-right: 0;
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+
+  .link-title {
+    margin-right: 9px;
+  }
+
+  .hero__decor-item {
+    display: none;
+  }
+
+
 }
 
 @media(max-width: 360.99px) {

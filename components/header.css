@@ -299,6 +299,7 @@
 }
 
 .lang__descr {
+  font-weight: 500;   
   margin-right: 10px;
   background: var(--brand-color, linear-gradient(47deg, #0A6FCC -44.41%, rgba(59, 237, 77, 0.75) 124.33%));
   background-clip: text;

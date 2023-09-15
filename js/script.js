@@ -1,5 +1,5 @@
 const swiper = new Swiper('.swiper', {
-  slidesPerView: '7',
+  slidesPerView: 'auto',
   loop: true,
   spaceBetween: 20,
 
@@ -7,6 +7,23 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+
+  // breakpoints: {
+
+  //   660: {
+  //     slidesPerView: 4,
+  //     spaceBetween: 20,
+  //   },
+  //   1000: {
+  //     slidesPerView: 5,
+  //     spaceBetween: 20,
+  //   },
+  //   1200: {
+  //     slidesPerView: 7,
+  //     spaceBetween: 20,
+
+  //   },
+  // },
 
 });
 
