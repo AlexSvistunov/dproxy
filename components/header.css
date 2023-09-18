@@ -73,8 +73,8 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 30px;
-  height: 30px;
+  width: 29px;
+  height: 29px;
 }
 
 .socials__link--tg {
@@ -298,6 +298,11 @@
   margin-right: 10px;
 }
 
+.lang__btn-change {
+  display: flex;
+  align-items: center;
+}
+
 .lang__descr {
   font-weight: 500;   
   margin-right: 10px;
@@ -307,7 +312,8 @@
   -webkit-text-fill-color: transparent;
 }
 
-.lang__btn-arrow {
+.lang__arrow {
+  display: inline-block;
   width: 10px;
   height: 5px;
   background-image: url('../images/arrow-down.svg');
@@ -350,4 +356,8 @@
 
 .header__nav.header__nav--active .header__nav-item:not(:last-child) {
   margin-bottom: 20px;
+}
+
+body.lock {
+  overflow-y: hidden;
 }

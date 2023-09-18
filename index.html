@@ -17,7 +17,7 @@
     <header class="header">
       <div class="container">
         <div class="header__wrapper">
-          <a class="logo header__logo" href="#" aria-label="Dproxy logo">
+          <a class="logo header__logo" href="index.html" aria-label="Dproxy logo">
           </a>
 
           <nav class="nav header__nav">
@@ -37,7 +37,7 @@
 
 
               <li class="nav__item header__nav-item">
-                <a class="nav__link header__nav-link" href="#">
+                <a class="nav__link header__nav-link" href="api.html">
                   Info API
                 </a>
               </li>
@@ -57,10 +57,13 @@
 
             <div class="lang">
               <img class="lang__img" src="images/lang.svg" alt="lang ball green">
-              <span class="lang__descr">Русский</span>
-              <button class="lang__btn-arrow btn-reset" aria-label="arrow down to choose language">
+              <button class="lang__btn-change btn-reset">
+                <span class="lang__descr">Русский</span>
 
+                <span class="lang__arrow" aria-label="arrow down to choose language">
+                </span>
               </button>
+              
             </div>
 
           </nav>
@@ -145,86 +148,91 @@
       <section class="proxy-types">
         <div class="container">
           <h2 class="proxy-types__title section-title">Виды прокси</h2>
-          <ul class="proxy-types__items types-list list-reset">
-            <li class="types-list__item types-item">
-              <h3 class="types-item__head">Android</h3>
+          
+          <div class="swiper proxy-types__slider">
+            <ul class="proxy-types__slider-container swiper-wrapper proxy-types__items types-list list-reset">
+              <li class="swiper-slide types-list__item types-item">
+                <h3 class="types-item__head">Android</h3>
+  
+                <ul class="types-item__list list-reset">
+                  <li class="types-item__el">Выделенный канал</li>
+                  <li class="types-item__el">Скорость до 15 Mb/s</li>
+                  <li class="types-item__el">Авто смена IP</li>
+                  <li class="types-item__el">Смена IP по ссылке</li>
+                  <li class="types-item__el">Любой оператор</li>
+                  <li class="types-item__el">http/socks5</li>
+                  <li class="types-item__el">Все операторы</li>
+                </ul>
+  
+                <div class="types-item__payment">
+                  <span class="types-item__pay">3 USDT/день</span>
+                  <span class="types-item__pay">10 USDT/неделя</span>
+                  <span class="types-item__pay">35 USDT/месяц</span>
+                  <span class="types-item__pay">95 USDT/3месяца</span>
+  
+                </div>
+  
+                <div class="types-item__box">
+                  <button class="types-item__button btn-reset">Протестировать</button>
+                </div>
+              </li>
+  
+              <li class="swiper-slide types-list__item types-item types-item__main">
+                <h3 class="types-item__head">Универсальный</h3>
+  
+                <ul class="types-item__list list-reset">
+                  <li class="types-item__el">Выделенный канал</li>
+                  <li class="types-item__el">Скорость до 15 Mb/s</li>
+                  <li class="types-item__el">Авто смена IP</li>
+                  <li class="types-item__el">Смена IP по ссылке</li>
+                  <li class="types-item__el">Любой оператор</li>
+                  <li class="types-item__el">http/socks5</li>
+                  <li class="types-item__el">Все операторы</li>
+                </ul>
+  
+                <div class="types-item__payment">
+                  <span class="types-item__pay">3 USDT/день</span>
+                  <span class="types-item__pay">10 USDT/неделя</span>
+                  <span class="types-item__pay">35 USDT/месяц</span>
+                  <span class="types-item__pay">95 USDT/3месяца</span>
+  
+                </div>
+  
+                <div class="types-item__box">
+                  <button class="types-item__button btn-reset">Протестировать</button>
+                </div>
+              </li>
+  
+  
+  
+              <li class="swiper-slide types-list__item types-item">
+                <h3 class="types-item__head">Windows</h3>
+  
+                <ul class="types-item__list list-reset">
+                  <li class="types-item__el">Выделенный канал</li>
+                  <li class="types-item__el">Скорость до 15 Mb/s</li>
+                  <li class="types-item__el">Авто смена IP</li>
+                  <li class="types-item__el">Смена IP по ссылке</li>
+                  <li class="types-item__el">Любой оператор</li>
+                  <li class="types-item__el">http/socks5</li>
+                  <li class="types-item__el">Все операторы</li>
+                </ul>
+  
+                <div class="types-item__payment">
+                  <span class="types-item__pay">3 USDT/день</span>
+                  <span class="types-item__pay">10 USDT/неделя</span>
+                  <span class="types-item__pay">35 USDT/месяц</span>
+                  <span class="types-item__pay">95 USDT/3месяца</span>
+  
+                </div>
+                <div class="types-item__box">
+                  <button class="types-item__button btn-reset">Протестировать</button>
+                </div>
+              </li>
+            </ul>
 
-              <ul class="types-item__list list-reset">
-                <li class="types-item__el">Выделенный канал</li>
-                <li class="types-item__el">Скорость до 15 Mb/s</li>
-                <li class="types-item__el">Авто смена IP</li>
-                <li class="types-item__el">Смена IP по ссылке</li>
-                <li class="types-item__el">Любой оператор</li>
-                <li class="types-item__el">http/socks5</li>
-                <li class="types-item__el">Все операторы</li>
-              </ul>
-
-              <div class="types-item__payment">
-                <span class="types-item__pay">3 USDT/день</span>
-                <span class="types-item__pay">10 USDT/неделя</span>
-                <span class="types-item__pay">35 USDT/месяц</span>
-                <span class="types-item__pay">95 USDT/3месяца</span>
-
-              </div>
-
-              <div class="types-item__box">
-                <button class="types-item__button btn-reset">Протестировать</button>
-              </div>
-            </li>
-
-            <li class="types-list__item types-item types-item__main">
-              <h3 class="types-item__head">Универсальный</h3>
-
-              <ul class="types-item__list list-reset">
-                <li class="types-item__el">Выделенный канал</li>
-                <li class="types-item__el">Скорость до 15 Mb/s</li>
-                <li class="types-item__el">Авто смена IP</li>
-                <li class="types-item__el">Смена IP по ссылке</li>
-                <li class="types-item__el">Любой оператор</li>
-                <li class="types-item__el">http/socks5</li>
-                <li class="types-item__el">Все операторы</li>
-              </ul>
-
-              <div class="types-item__payment">
-                <span class="types-item__pay">3 USDT/день</span>
-                <span class="types-item__pay">10 USDT/неделя</span>
-                <span class="types-item__pay">35 USDT/месяц</span>
-                <span class="types-item__pay">95 USDT/3месяца</span>
-
-              </div>
-
-              <div class="types-item__box">
-                <button class="types-item__button btn-reset">Протестировать</button>
-              </div>
-            </li>
-
-
-
-            <li class="types-list__item types-item">
-              <h3 class="types-item__head">Windows</h3>
-
-              <ul class="types-item__list list-reset">
-                <li class="types-item__el">Выделенный канал</li>
-                <li class="types-item__el">Скорость до 15 Mb/s</li>
-                <li class="types-item__el">Авто смена IP</li>
-                <li class="types-item__el">Смена IP по ссылке</li>
-                <li class="types-item__el">Любой оператор</li>
-                <li class="types-item__el">http/socks5</li>
-                <li class="types-item__el">Все операторы</li>
-              </ul>
-
-              <div class="types-item__payment">
-                <span class="types-item__pay">3 USDT/день</span>
-                <span class="types-item__pay">10 USDT/неделя</span>
-                <span class="types-item__pay">35 USDT/месяц</span>
-                <span class="types-item__pay">95 USDT/3месяца</span>
-
-              </div>
-              <div class="types-item__box">
-                <button class="types-item__button btn-reset">Протестировать</button>
-              </div>
-            </li>
-          </ul>
+            <div class="swiper-pagination"></div>
+          </div>
 
           <h3 class="proxy-types__subtitle proxy-types__subtitle--1"> Вам будет доступна смена IP по ссылке или
             по авто-интервалу от 1 до 999 минут
@@ -283,134 +291,138 @@
         <div class="container-big">
           <h2 class="help__title section-title section-title--light">Программа решает задачу</h2>
 
-          <ul class="help__items list-reset">
-            <li class="help__item">
-              <div class="help__item-card">
-                <h3 class="help__item-title">Регистрация
-                  аккаунты</h3>
+          <div class="swiper help__slider">
+            <ul class="swiper-wrapper help__items list-reset">
+              <li class="swiper-slide help__item">
+                <div class="help__item-card">
+                  <h3 class="help__item-title">Регистрация
+                    аккаунты</h3>
+  
+                  <p class="help__item-descr">Легко регистрирует учетные записи на форумах, в играх и соцсетях</p>
+  
+  
+                  <button class="help__item-btn btn-reset">
+                    <span>Подробнее</span>
+                  </button>
+                </div>
+  
+              </li>
+  
+              <li class="swiper-slide help__item">
+                <div class="help__item-card">
+                  <h3 class="help__item-title">Репостит,
+                    фолловинг</h3>
+  
+                  <p class="help__item-descr">Накручивает репосты,
+                    подписчиков, лайки,
+                    опросы, фолловеров и прочее</p>
+  
+  
+                  <button class="help__item-btn btn-reset">
+                    <span>Подробнее</span>
+                  </button>
+                </div>
+              </li>
+  
+  
+              <li class="swiper-slide help__item">
+                <div class="help__item-card">
+                  <h3 class="help__item-title">Массовые
+                    рассылки</h3>
+  
+                  <p class="help__item-descr">Рассылает почту,
+                    сообщения в соцсетях с помощью мобильных прокси</p>
+  
+  
+                  <button class="help__item-btn btn-reset">
+                    <span>Подробнее</span>
+                  </button>
+                </div>
+  
+              </li>
+  
+              <li class="swiper-slide help__item">
+                <div class="help__item-card">
+                  <h3 class="help__item-title">Обходит
+                    блокировки</h3>
+  
+                  <p class="help__item-descr">Отлично обходит самые
+                    разнообразные блокировки</p>
+  
+  
+                  <button class="help__item-btn btn-reset">
+                    <span>Подробнее</span>
+                  </button>
+                </div>
+  
+              </li>
+  
+  
+              <li class="swiper-slide help__item">
+                <div class="help__item-card">
+                  <h3 class="help__item-title">Социальные
+                    сети и сайты</h3>
+  
+                  <p class="help__item-descr">Выполняет любые
+                    действия в соцсетях и любых веб-ресурсах в интернете</p>
+  
+  
+                  <button class="help__item-btn btn-reset">
+                    <span>Подробнее</span>
+                  </button>
+                </div>
+              </li>
+  
+  
+              <li class="swiper-slide help__item">
+                <div class="help__item-card">
+                  <h3 class="help__item-title">Специальный
+                    софт</h3>
+  
+                  <p class="help__item-descr">Мобильные прокси хорошо подходят для работы в профильных программах</p>
+  
+  
+                  <button class="help__item-btn btn-reset">
+                    <span>Подробнее</span>
+                  </button>
+                </div>
+              </li>
+  
+  
+              <li class="swiper-slide help__item">
+                <div class="help__item-card">
+                  <h3 class="help__item-title">Парсинг, сбор
+                    данных</h3>
+  
+                  <p class="help__item-descr">Собирает любые данные из всемирной паутины не боясь блокировки</p>
+  
+  
+                  <button class="help__item-btn btn-reset">
+                    <span>Подробнее</span>
+                  </button>
+                </div>
+              </li>
+  
+  
+              <li class="swiper-slide help__item">
+                <div class="help__item-card">
+                  <h3 class="help__item-title">Рекламные
+                    сети</h3>
+  
+                  <p class="help__item-descr">Управляет множеством рекламных аккаунтов одновременно</p>
+  
+  
+                  <button class="help__item-btn btn-reset">
+                    <span>Подробнее</span>
+                  </button>
+                </div>
+  
+              </li>
+            </ul>
 
-                <p class="help__item-descr">Легко регистрирует учетные записи на форумах, в играх и соцсетях</p>
+          </div>
 
 
-                <button class="help__item-btn btn-reset">
-                  <span>Подробнее</span>
-                </button>
-              </div>
-
-              <!-- бордер сделать у другого элемента) -->
-            </li>
-
-            <li class="help__item">
-              <div class="help__item-card">
-                <h3 class="help__item-title">Репостит,
-                  фолловинг</h3>
-
-                <p class="help__item-descr">Накручивает репосты,
-                  подписчиков, лайки,
-                  опросы, фолловеров и прочее</p>
-
-
-                <button class="help__item-btn btn-reset">
-                  <span>Подробнее</span>
-                </button>
-              </div>
-            </li>
-
-
-            <li class="help__item">
-              <div class="help__item-card">
-                <h3 class="help__item-title">Массовые
-                  рассылки</h3>
-
-                <p class="help__item-descr">Рассылает почту,
-                  сообщения в соцсетях с помощью мобильных прокси</p>
-
-
-                <button class="help__item-btn btn-reset">
-                  <span>Подробнее</span>
-                </button>
-              </div>
-
-            </li>
-
-
-            <li class="help__item">
-              <div class="help__item-card">
-                <h3 class="help__item-title">Обходит
-                  блокировки</h3>
-
-                <p class="help__item-descr">Отлично обходит самые
-                  разнообразные блокировки</p>
-
-
-                <button class="help__item-btn btn-reset">
-                  <span>Подробнее</span>
-                </button>
-              </div>
-            </li>
-
-
-            <li class="help__item">
-              <div class="help__item-card">
-                <h3 class="help__item-title">Социальные
-                  сети и сайты</h3>
-
-                <p class="help__item-descr">Выполняет любые
-                  действия в соцсетях и любых веб-ресурсах в интернете</p>
-
-
-                <button class="help__item-btn btn-reset">
-                  <span>Подробнее</span>
-                </button>
-              </div>
-            </li>
-
-
-            <li class="help__item">
-              <div class="help__item-card">
-                <h3 class="help__item-title">Специальный
-                  софт</h3>
-
-                <p class="help__item-descr">Мобильные прокси хорошо подходят для работы в профильных программах</p>
-
-
-                <button class="help__item-btn btn-reset">
-                  <span>Подробнее</span>
-                </button>
-              </div>
-            </li>
-
-
-            <li class="help__item">
-              <div class="help__item-card">
-                <h3 class="help__item-title">Парсинг, сбор
-                  данных</h3>
-
-                <p class="help__item-descr">Собирает любые данные из всемирной паутины не боясь блокировки</p>
-
-
-                <button class="help__item-btn btn-reset">
-                  <span>Подробнее</span>
-                </button>
-              </div>
-            </li>
-
-
-            <li class="help__item">
-              <div class="help__item-card">
-                <h3 class="help__item-title">Рекламные
-                  сети</h3>
-
-                <p class="help__item-descr">Управляет множеством рекламных аккаунтов одновременно</p>
-
-
-                <button class="help__item-btn btn-reset">
-                  <span>Подробнее</span>
-                </button>
-              </div>
-
-            </li>
-          </ul>
 
         </div>
       </section>
@@ -654,85 +666,93 @@
 
       <section class="areas">
         <div class="container">
-          <h2 class="areas__title section-title">Области применения мобильных прокси <span class="section-title--sub">А
-              также софт для которого применимы мобильные прокси</span></h2>
+          <h2 class="areas__title section-title">
+            Области применения мобильных прокси
+            <span class="section-title--sub">А
+              также софт для которого применимы мобильные прокси
+            </span>
+          </h2>
 
-          <div class="areas__items">
-            <div class="areas__item">
-              <h3 class="areas__item-title">Расширения для браузеров</h3>
+          <div class="swiper areas__slider">
+            
+            <div class="swiper-wrapper areas__items">
+              <div class="swiper-slide areas__item">
+                <h3 class="areas__item-title">Расширения для браузеров</h3>
 
-              <p class="areas__item-descr">Топовые браузерные программы имеют расширения, помогающие пользователям
-                проксировать трафик браузера, например FoxyProxy для Mozilla Firefox или Proxy SwitchyOmega для Google
-                Chrome</p>
+                <p class="areas__item-descr">Топовые браузерные программы имеют расширения, помогающие пользователям
+                  проксировать трафик браузера, например FoxyProxy для Mozilla Firefox или Proxy SwitchyOmega для Google
+                  Chrome</p>
+              </div>
+
+              <div class="swiper-slide areas__item">
+                <h3 class="areas__item-title">Работа с поисковыми системами</h3>
+
+                <p class="areas__item-descr">Используя сеть Dproxy Вы можете собирать точные данные из поисковых систем
+                  (Google, Yandex, Mail.ru, Bing, Рамблер, DuckDuckGo и других). Будь то база доменов или поисковые
+                  подсказки</p>
+              </div>
+
+              <div class="swiper-slide areas__item">
+                <h3 class="areas__item-title">Проверка и размещение рекламы</h3>
+
+                <p class="areas__item-descr">Проверяйте корректность установленных ссылок, правильность размещения
+                  рекламных материалов на веб-сайтах, работайте с любой аналитикой, будь то Yandex Metrika или Google
+                  Analytics</p>
+              </div>
+
+              <div class="swiper-slide areas__item">
+                <h3 class="areas__item-title">SEO-оптимизация</h3>
+
+                <p class="areas__item-descr">Собирайте данные из выдачи поисковых систем, рейтинги, поисковые подсказки,
+                  частотность ключевых слов и многое другое при помощи мобильных 4G прокси от компании ProxyAPP</p>
+              </div>
+
+
+              <div class="swiper-slide areas__item">
+                <h3 class="areas__item-title">Поддерживаемые ОС</h3>
+
+                <p class="areas__item-descr">Наши прокси будут работать в любой операционной системе: Windows, macOS,
+                  Android, AndroidTV, iOS (iPhone, iPad), семейство Linux (Mint, Ubuntu, Debian, Fedora, CentOS, Gentoo,
+                  Kali) и других</p>
+              </div>
+
+
+              <div class="swiper-slide areas__item">
+                <h3 class="areas__item-title">Программы маршрутизации</h3>
+
+                <p class="areas__item-descr">Использование в программах, перенаправляющих весь сетевой трафик Вашего
+                  устройства через прокси сервер или цепочку мобильных прокси, такие как: FreeCap, WideCap, Proxifier,
+                  ProxyCap и другие</p>
+              </div>
+
+              <div class="swiper-slide areas__item">
+                <h3 class="areas__item-title">Большинство браузеров</h3>
+
+                <p class="areas__item-descr">Большинство популярных браузеров: Google Chrome, Opera, Mozilla Firefox,
+                  Яндекс Браузер, Safari, UC браузер, Edge, MSIE — работают с маршрутизацией с помощью прокси, в том числе
+                  и 4G</p>
+              </div>
+
+              <div class="swiper-slide areas__item">
+                <h3 class="areas__item-title">Арбитраж и SMM</h3>
+
+                <p class="areas__item-descr">Отправляйте сообщения по всем доступным каналам мировой сети: почта,
+                  соц.сети, мессенджеры и другие. Управляйте любым количеством аккаунтов и забудьте о блокировках
+                  со стороны сервисов</p>
+              </div>
+
+              <div class="swiper-slide areas__item">
+                <h3 class="areas__item-title areas__item-title--decor">Специальный софт</h3>
+
+                <p class="areas__item-descr">Почти весь софт для сбора/анализа данных или работы с социальными сетями
+                  поддерживают прокси: ZennoPoster, XRumer, QuickSender, Human Emulator, Socialhammer, BroBot, PostMan,
+                  Тулиграм, CapMonster</p>
+              </div>
+
+
             </div>
-
-            <div class="areas__item">
-              <h3 class="areas__item-title">Работа с поисковыми системами</h3>
-
-              <p class="areas__item-descr">Используя сеть Dproxy Вы можете собирать точные данные из поисковых систем
-                (Google, Yandex, Mail.ru, Bing, Рамблер, DuckDuckGo и других). Будь то база доменов или поисковые
-                подсказки</p>
-            </div>
-
-            <div class="areas__item">
-              <h3 class="areas__item-title">Проверка и размещение рекламы</h3>
-
-              <p class="areas__item-descr">Проверяйте корректность установленных ссылок, правильность размещения
-                рекламных материалов на веб-сайтах, работайте с любой аналитикой, будь то Yandex Metrika или Google
-                Analytics</p>
-            </div>
-
-            <div class="areas__item">
-              <h3 class="areas__item-title">SEO-оптимизация</h3>
-
-              <p class="areas__item-descr">Собирайте данные из выдачи поисковых систем, рейтинги, поисковые подсказки,
-                частотность ключевых слов и многое другое при помощи мобильных 4G прокси от компании ProxyAPP</p>
-            </div>
-
-
-            <div class="areas__item">
-              <h3 class="areas__item-title">Поддерживаемые ОС</h3>
-
-              <p class="areas__item-descr">Наши прокси будут работать в любой операционной системе: Windows, macOS,
-                Android, AndroidTV, iOS (iPhone, iPad), семейство Linux (Mint, Ubuntu, Debian, Fedora, CentOS, Gentoo,
-                Kali) и других</p>
-            </div>
-
-
-            <div class="areas__item">
-              <h3 class="areas__item-title">Программы маршрутизации</h3>
-
-              <p class="areas__item-descr">Использование в программах, перенаправляющих весь сетевой трафик Вашего
-                устройства через прокси сервер или цепочку мобильных прокси, такие как: FreeCap, WideCap, Proxifier,
-                ProxyCap и другие</p>
-            </div>
-
-            <div class="areas__item">
-              <h3 class="areas__item-title">Большинство браузеров</h3>
-
-              <p class="areas__item-descr">Большинство популярных браузеров: Google Chrome, Opera, Mozilla Firefox,
-                Яндекс Браузер, Safari, UC браузер, Edge, MSIE — работают с маршрутизацией с помощью прокси, в том числе
-                и 4G</p>
-            </div>
-
-            <div class="areas__item">
-              <h3 class="areas__item-title">Арбитраж и SMM</h3>
-
-              <p class="areas__item-descr">Отправляйте сообщения по всем доступным каналам мировой сети: почта,
-                соц.сети, мессенджеры и другие. Управляйте любым количеством аккаунтов и забудьте о блокировках
-                со стороны сервисов</p>
-            </div>
-
-            <div class="areas__item">
-              <h3 class="areas__item-title areas__item-title--decor">Специальный софт</h3>
-
-              <p class="areas__item-descr">Почти весь софт для сбора/анализа данных или работы с социальными сетями
-                поддерживают прокси: ZennoPoster, XRumer, QuickSender, Human Emulator, Socialhammer, BroBot, PostMan,
-                Тулиграм, CapMonster</p>
-            </div>
-
-
           </div>
+
         </div>
       </section>
 

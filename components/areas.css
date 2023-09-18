@@ -7,6 +7,11 @@
   margin-bottom: var(--title-offset);
 }
 
+.areas__items {
+  display: flex;
+  flex-direction: column;
+}
+
 .areas__item {
   padding: 20px 70px 30px 146px;
   background-color: var(--white);
@@ -69,3 +74,7 @@
   -webkit-text-fill-color: transparent;
 }
 
+
+.areas__slider .swiper-wrapper {
+  box-sizing: border-box;
+}

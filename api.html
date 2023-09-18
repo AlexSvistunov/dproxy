@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css"/>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__wrapper">
+            <a class="logo header__logo" href="index.html" aria-label="Dproxy logo"> </a>
+
+            <nav class="nav header__nav">
+              <button
+                class="header__btn-back btn-reset"
+                aria-label="arrow left to back"
+              ></button>
+              <ul class="nav__list header__nav-list list-reset">
+                <li class="nav__item header__nav-item">
+                  <a class="nav__link header__nav-link" href="#"> Тарифы </a>
+                </li>
+
+                <li class="nav__item header__nav-item">
+                  <a class="nav__link header__nav-link" href="#"> FAQ </a>
+                </li>
+
+                <li class="nav__item header__nav-item">
+                  <a class="nav__link header__nav-link" href="/api.html"> Info API </a>
+                </li>
+              </ul>
+
+              <ul class="socials header-menu__socials list-reset">
+                <li class="socials__item header-menu__socials-item">
+                  <a
+                    class="socials__link socials__link--tg header-menu__socials-link"
+                    href="#"
+                    aria-label="telegram icon"
+                    target="_blank"
+                  ></a>
+                </li>
+
+                <li class="socials__item header-menu__socials-item">
+                  <a
+                    class="socials__link socials__link--mail header-menu__socials-link"
+                    href="#"
+                    aria-label="mailbox icon"
+                    target="_blank"
+                  ></a>
+                </li>
+              </ul>
+
+              <div class="lang">
+                <img
+                  class="lang__img"
+                  src="images/lang.svg"
+                  alt="lang ball green"
+                />
+                <span class="lang__descr">Русский</span>
+                <button
+                  class="lang__btn-arrow btn-reset"
+                  aria-label="arrow down to choose language"
+                ></button>
+              </div>
+            </nav>
+
+            <div class="header__right">
+              <!-- <div class="toggle">
+              <input class="toggle-input" type="checkbox">
+            </div> -->
+
+              <div class="switch-toggle" aria-checked="false" role="switch">
+                <span class="switch-toggle-border"></span>
+                <div class="switch-toggle-box"></div>
+                <!-- <input type="checkbox" class="switch-toggle-input"> -->
+              </div>
+
+              <button
+                class="burger btn-reset"
+                aria-label="burger menu"
+              ></button>
+              <ul class="socials header__socials list-reset">
+                <li class="socials__item header__socials-item">
+                  <a
+                    class="socials__link socials__link--tg header__socials-link"
+                    href="#"
+                    aria-label="telegram icon"
+                    target="_blank"
+                  ></a>
+                </li>
+
+                <li class="socials__item header__socials-item">
+                  <a
+                    class="socials__link socials__link--mail header__socials-link"
+                    href="#"
+                    aria-label="mailbox icon"
+                    target="_blank"
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="api">
+          <div class="api__container">
+            <h2 class="api__title section-title section-title--light">Информация об API <span class="section-title--sub">Ответы на вопросы</span></h2>
+
+            <div class="accordion__box">
+              <button class="accordion__switch accordion__box-switch btn-reset" aria-expanded="false">
+                <h3 class="accordion__box-title accordion__title">Facts</h3>
+                <span class="accordion__icon accordion__box-icon"></span>
+              </button>
+              <div class="accordion__box-inner" aria-hidden="true">
+                <div class="accordion">
+                  <button class="accordion__switch btn-reset" aria-expanded="false">
+                    <h3 class="accordion__title">Request</h3>
+      
+                    <span class="accordion__icon"></span>
+                  </button>
+      
+                  <div class="accordion__content" aria-hidden="true">
+                    <p class="accordion__text">
+                      4G прокси, как и классические прокси, — пропускают через себя поток данных от пользователя к серверу
+                      и получают ответный запрос. Мобильные прокси задействуют множество IP, используемые, в основном, для
+                      мобильных девайсов. Такие IP-адреса постоянно меняются и не вызывают со стороны сервера подозрений,
+                      т. к. ими пользуются сотни и тысячи пользователей. У сервера площадки не возникает сомнений, что запрос
+                      делает обычный человек, а не робот, поэтому сервер смягчает для них ограничения
+                    </p>
+                  </div>
+                </div>
+  
+                <div class="accordion">
+                  <button class="accordion__switch btn-reset" aria-expanded="false">
+                    <h3 class="accordion__title">Response</h3>
+      
+                    <span class="accordion__icon"></span>
+                  </button>
+      
+                  <div class="accordion__content" aria-hidden="true">
+                    <p class="accordion__text">
+                      4G прокси, как и классические прокси, — пропускают через себя поток данных от пользователя к серверу
+                      и получают ответный запрос. Мобильные прокси задействуют множество IP, используемые, в основном, для
+                      мобильных девайсов. Такие IP-адреса постоянно меняются и не вызывают со стороны сервера подозрений,
+                      т. к. ими пользуются сотни и тысячи пользователей. У сервера площадки не возникает сомнений, что запрос
+                      делает обычный человек, а не робот, поэтому сервер смягчает для них ограничения
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion__box">
+              <button class="accordion__switch accordion__box-switch btn-reset" aria-expanded="false">
+                <h3 class="accordion__box-title accordion__title">Info</h3>
+                <span class="accordion__icon accordion__box-icon"></span>
+              </button>
+
+              <div class="accordion__box-inner" aria-hidden="true">
+                <div class="accordion">
+                  <button class="accordion__switch btn-reset" aria-expanded="false">
+                    <h3 class="accordion__title">Смена IP по ссылке</h3>
+      
+                    <span class="accordion__icon"></span>
+                  </button>
+      
+                  <div class="accordion__content" aria-hidden="true">
+                    <p class="accordion__text">
+                      4G прокси, как и классические прокси, — пропускают через себя поток данных от пользователя к серверу
+                      и получают ответный запрос. Мобильные прокси задействуют множество IP, используемые, в основном, для
+                      мобильных девайсов. Такие IP-адреса постоянно меняются и не вызывают со стороны сервера подозрений,
+                      т. к. ими пользуются сотни и тысячи пользователей. У сервера площадки не возникает сомнений, что запрос
+                      делает обычный человек, а не робот, поэтому сервер смягчает для них ограничения
+                    </p>
+                  </div>
+                </div>
+  
+                <div class="accordion">
+                  <button class="accordion__switch btn-reset" aria-expanded="false">
+                    <h3 class="accordion__title">Установить интервал мены IP</h3>
+      
+                    <span class="accordion__icon"></span>
+                  </button>
+      
+                  <div class="accordion__content" aria-hidden="true">
+                    <p class="accordion__text">
+                      4G прокси, как и классические прокси, — пропускают через себя поток данных от пользователя к серверу
+                      и получают ответный запрос. Мобильные прокси задействуют множество IP, используемые, в основном, для
+                      мобильных девайсов. Такие IP-адреса постоянно меняются и не вызывают со стороны сервера подозрений,
+                      т. к. ими пользуются сотни и тысячи пользователей. У сервера площадки не возникает сомнений, что запрос
+                      делает обычный человек, а не робот, поэтому сервер смягчает для них ограничения
+                    </p>
+                  </div>
+                </div>
+  
+                <div class="accordion">
+                  <button class="accordion__switch btn-reset" aria-expanded="false">
+                    <h3 class="accordion__title">Перезагрузить устройство</h3>
+      
+                    <span class="accordion__icon"></span>
+                  </button>
+      
+                  <div class="accordion__content" aria-hidden="true">
+                    <p class="accordion__text">
+                      4G прокси, как и классические прокси, — пропускают через себя поток данных от пользователя к серверу
+                      и получают ответный запрос. Мобильные прокси задействуют множество IP, используемые, в основном, для
+                      мобильных девайсов. Такие IP-адреса постоянно меняются и не вызывают со стороны сервера подозрений,
+                      т. к. ими пользуются сотни и тысячи пользователей. У сервера площадки не возникает сомнений, что запрос
+                      делает обычный человек, а не робот, поэтому сервер смягчает для них ограничения
+                    </p>
+                  </div>
+                </div>
+  
+  
+                <div class="accordion">
+                  <button class="accordion__switch btn-reset" aria-expanded="false">
+                    <h3 class="accordion__title">Получить информацию о моих прокси</h3>
+      
+                    <span class="accordion__icon"></span>
+                  </button>
+      
+                  <div class="accordion__content" aria-hidden="true">
+                    <p class="accordion__text">
+                      4G прокси, как и классические прокси, — пропускают через себя поток данных от пользователя к серверу
+                      и получают ответный запрос. Мобильные прокси задействуют множество IP, используемые, в основном, для
+                      мобильных девайсов. Такие IP-адреса постоянно меняются и не вызывают со стороны сервера подозрений,
+                      т. к. ими пользуются сотни и тысячи пользователей. У сервера площадки не возникает сомнений, что запрос
+                      делает обычный человек, а не робот, поэтому сервер смягчает для них ограничения
+                    </p>
+                  </div>
+                </div>
+  
+  
+                <div class="accordion">
+                  <button class="accordion__switch btn-reset" aria-expanded="false">
+                    <h3 class="accordion__title">Сменить провайдера</h3>
+      
+                    <span class="accordion__icon"></span>
+                  </button>
+      
+                  <div class="accordion__content" aria-hidden="true">
+                    <p class="accordion__text">
+                      4G прокси, как и классические прокси, — пропускают через себя поток данных от пользователя к серверу
+                      и получают ответный запрос. Мобильные прокси задействуют множество IP, используемые, в основном, для
+                      мобильных девайсов. Такие IP-адреса постоянно меняются и не вызывают со стороны сервера подозрений,
+                      т. к. ими пользуются сотни и тысячи пользователей. У сервера площадки не возникает сомнений, что запрос
+                      делает обычный человек, а не робот, поэтому сервер смягчает для них ограничения
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer-top">
+            <div class="footer-columns">
+              <div class="footer-column footer-socials">
+                <a class="logo footer__logo" href="#"></a>
+
+                <address class="footer__adress">
+                  <div class="footer-socials__head">Как с нами связаться</div>
+
+                  <ul class="socials footer__socials list-reset">
+                    <li class="socials__item footer__socials-item">
+                      <a
+                        class="socials__link socials__link--tg footer__socials-link"
+                        href="#"
+                        aria-label="telegram icon"
+                      ></a>
+                    </li>
+
+                    <li class="socials__item footer__socials-item">
+                      <a
+                        class="socials__link socials__link--mail footer__socials-link"
+                        href="#"
+                        aria-label="mailbox icon"
+                      ></a>
+                    </li>
+                  </ul>
+                </address>
+              </div>
+              <div class="footer-column footer-column--socials">
+                <ul class="footer__list list-reset">
+                  <li class="footer__item">
+                    <a class="footer__link" href="">Тарифы</a>
+                  </li>
+
+                  <li class="footer__item">
+                    <a class="footer__link" href="">FAQ</a>
+                  </li>
+
+                  <li class="footer__item">
+                    <a class="footer__link" href="">Для партнеров</a>
+                  </li>
+
+                  <li class="footer__item">
+                    <a class="footer__link" href="">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="footer-column">
+                <div class="footer-top__payment footer-payment">
+                  <div class="footer-payment__head">Способы оплаты</div>
+
+                  <ul class="footer__payment-list list-reset">
+                    <li class="footer__payment-item">
+                      <a
+                        class="footer__payment-link footer__payment-link--visa"
+                        href="#"
+                        aria-label="visa icon"
+                      ></a>
+                    </li>
+
+                    <li class="footer__payment-item">
+                      <a
+                        class="footer__payment-link footer__payment-link--mc"
+                        href="#"
+                        aria-label="mastercard icon"
+                      ></a>
+                    </li>
+
+                    <li class="footer__payment-item">
+                      <a
+                        class="footer__payment-link footer__payment-link--t"
+                        href="#"
+                        aria-label="t icon"
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="footer-column--mobile">
+                <address class="footer__adress-mobile">
+                  <div class="footer-socials__head">Как с нами связаться</div>
+
+                  <ul class="socials footer__socials list-reset">
+                    <li class="socials__item footer__socials-item">
+                      <a
+                        class="socials__link socials__link--tg footer__socials-link"
+                        href="#"
+                        aria-label="telegram icon"
+                      ></a>
+                    </li>
+
+                    <li class="socials__item footer__socials-item">
+                      <a
+                        class="socials__link socials__link--mail footer__socials-link"
+                        href="#"
+                        aria-label="mailbox icon"
+                      ></a>
+                    </li>
+                  </ul>
+                </address>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <small class="footer-bottom__copy"> © 2023 Dproxy </small>
+
+            <small class="footer-bottom__text">
+              Политика обработки персональных данных
+            </small>
+          </div>
+          <h4 class="visually-hidden">Made by Alexey Svistunov</h4>
+          <div class="visually-hidden" class="author">
+            Author: made by Alex Svistunov
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

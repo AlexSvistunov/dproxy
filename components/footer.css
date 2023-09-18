@@ -4,6 +4,8 @@
   padding: var(--offset) 0
 }
 
+
+
 .footer__container {
   max-width: 630px;
   margin: 0 auto;
@@ -56,6 +58,9 @@
   font-style: normal;
   margin-bottom: 15px;
 }
+
+
+
 
 .footer__list {
   padding: 0;
