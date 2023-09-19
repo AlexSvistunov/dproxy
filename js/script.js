@@ -1,6 +1,6 @@
 const applySlider = document.querySelector('.apply__box');
 const swiper = new Swiper(applySlider, {
-  slidesPerView: 'auto',
+  slidesPerView: '1',
   loop: true,
   spaceBetween: 20,
 
@@ -9,22 +9,30 @@ const swiper = new Swiper(applySlider, {
     prevEl: '.swiper-button-prev',
   },
 
-  // breakpoints: {
+  breakpoints: {
+    500: {
+      slidesPerView: 2,
+    },
 
-  //   660: {
-  //     slidesPerView: 4,
-  //     spaceBetween: 20,
-  //   },
-  //   1000: {
-  //     slidesPerView: 5,
-  //     spaceBetween: 20,
-  //   },
-  //   1200: {
-  //     slidesPerView: 7,
-  //     spaceBetween: 20,
+    600: {
+      slidesPerView: 3,
+    },
 
-  //   },
-  // },
+    768: {
+      slidesPerView: 4,
+    },
+
+    1100: {
+      slidesPerView: 5,
+    },
+    1000: {
+      slidesPerView: 6,
+    },
+    1200: {
+      slidesPerView: 7,
+
+    },
+  },
 
 });
 

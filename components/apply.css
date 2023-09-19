@@ -13,8 +13,12 @@
   margin-bottom: var(--title-offset);
 }
 
-.apply .swiper-container {
+/* .apply .swiper-container {
   padding-right: 30px;
+} */
+
+.apply .swiper {
+  padding-right: 60px;
 }
 
 
