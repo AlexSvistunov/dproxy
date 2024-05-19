@@ -60,7 +60,7 @@ HTML, CSS, JS, BEM, Swiper
     z-index: -1;
 }
 ```
-Проблему превращения блоков с slider на мобилках решил при помощи написания функции resizableSwiper, которая по сути инизализирует swiper только на мобилках и уничтожением слайдера через destroy
+Проблему превращения блоков с slider на мобилках решил при помощи написания функции resizableSwiper
 
 ```JS
   window.addEventListener('DOMContentLoaded', () => {
