@@ -1,39 +1,35 @@
-# **Dproxy - проект мобильных прокси с красивым дизайном и множеством интерактивных элементов**
+# **Dproxy - mobile proxy website**
 
-[Посмотреть проект LIVE](https://alexsvistunov.github.io/dproxy/):
+[View the project live](https://alexsvistunov.github.io/dproxy/):
 
-## Технологии:
+## Tech stack:
 HTML, CSS, JS, BEM, Swiper
 
-
-## Реализованные фичи:
+## Implemented features:
 
 + Gradient border
 
-+ Переключатель языка
++ Language switcher
 
-+ Декоративные элементы
++ Decorative elements
 
-+ Превращение блоков в слайдер на планшете и мобильных устройствах(3 секции)
++ Turning grid blocks into slider blocks on tablet and mobile devices(3 sections)
 
-+ Переиспользуемые компоненты
++ Reusable components
 
-+ Аккордеон 
++ Accordion 
 
-+ Бургер-меню
++ Burger menu
 
+## Problems faced:
+There is no implementation of gradient border styling in CSS
+Multiple swiper sliders
+There is no implementation in the Swiper library to turn blocks into slider on certain devices(screen width)
 
-## Проблемы, с которыми столкнулся:
-
-В CSS нет реализации стилизации градиентных границ
-
-В библиотеке Swiper нет реализации превращения блоков в slider на определенных устройствах(ширине экрана)
-
-
-## Решение проблем:
-Проблему градиентных границ решил при помощи абсолютного позиционирования псевдоэлементов и z-index
+## Problem solving
+The problem of gradient borders was solved by absolute positioning of pseudo elements and z-index, It's not just the typical border in CSS
 ```html
-<!-- На примере кнопки написать разработчику -->
+<!-- Using the example of the button (write to the creator) -->
 
 .link-writetocreator {
     position: relative;
@@ -59,8 +55,8 @@ HTML, CSS, JS, BEM, Swiper
     border-radius: 15px;
     z-index: -1;
 }
-```
-Проблему превращения блоков с slider на мобилках решил при помощи написания функции resizableSwiper
+
+The problem with turning blocks into slider on certain devices(screen width) was solved with the resizableSwiper function
 
 ```JS
   window.addEventListener('DOMContentLoaded', () => {
@@ -110,7 +106,6 @@ HTML, CSS, JS, BEM, Swiper
         clickable: true,
       },
     },
-    // someFunc
   );
 
   resizableSwiper(
@@ -135,6 +130,6 @@ HTML, CSS, JS, BEM, Swiper
 ```
 
 
-### Автор: Alex Svistunov
+### Author: Alex Svistunov
 
 
